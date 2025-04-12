@@ -2,7 +2,7 @@
 exports.handler = async function(event, context) {
   // Les données que tu veux envoyer à l'ESP32
   const data = {
-    pseudo: "Rogue",
+    pseudo: "MMMMMMMMMM",
     pdp: 3,
     version: "v0.1"
   };
