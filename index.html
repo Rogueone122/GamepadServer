@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Data Collector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .data {
+            background-color: #e2e2e2;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESP32 Data Collector</h1>
+    <p>Data from ESP32 will appear below:</p>
+    <div id="data" class="data">
+        No data received yet.
+    </div>
+    <script>
+        // Fonction pour mettre à jour l'affichage des données reçues
+        async function fetchData() {
+            const response = await fetch('/.netlify/functions/submit-data');
+            const data = await response.json();
+            document.getElementById('data').innerText = `Pseudo: ${data.pseudo}, PD: ${data.pdp}, Version: ${data.version}`;
+        }
+
+        // Actualiser les données toutes les 5 secondes
+        setInterval(fetchData, 5000);
+    </script>
+</body>
+</html>
