@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESP32 Data Collector</title>
+    <title>ESP32 Version Info</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,31 +17,35 @@
         .data {
             background-color: #e2e2e2;
             padding: 10px;
-            margin: 20px;
+            margin: 20px auto;
             border-radius: 5px;
+            display: inline-block;
+            min-width: 250px;
         }
     </style>
 </head>
 <body>
-    <h1>ESP32 Data CollectorMMM</h1>
-    <p>Data from ESP32 will appear below:</p>
+    <h1>Informations Version ESP32</h1>
+    <p>Données récupérées depuis le serveur :</p>
     <div id="data" class="data">
-        No data received yet.
+        Chargement des données...
     </div>
+
     <script>
-        // Fonction pour mettre à jour l'affichage des données reçues
         async function fetchData() {
             try {
                 const response = await fetch('/.netlify/functions/submit-data');
                 const data = await response.json();
-                document.getElementById('data').innerText = `Pseudo: ${data.pseudo}, PD: ${data.pdp}, Version: ${data.version}`;
+                document.getElementById('data').innerText =
+                    `Version : ${data.version}\nImportance : ${data.importance}`;
             } catch (error) {
-                console.error('Error fetching data:', error);
+                console.error('Erreur lors de la récupération des données:', error);
+                document.getElementById('data').innerText = "Erreur lors de la récupération des données.";
             }
         }
 
-        // Actualiser les données toutes les 5 secondes
-        setInterval(fetchData, 5000);
+        fetchData(); // Appel initial
+        setInterval(fetchData, 5000); // Mise à jour toutes les 5 secondes
     </script>
 </body>
 </html>
