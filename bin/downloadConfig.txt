@@ -1,2 +1,2 @@
-TestBIN.ino.bin : /jeuxSolo/a/b/ccccccc
+TestBIN.ino.bin : /
 TestBIN1.ino.bin : /jeuxSolo
