@@ -1,2 +1,2 @@
-DEL : /delTest.txt
-DELF : /del/
+DEL : /TestBIN.ino.bin
+DELF : /jeuxSolo/TestBIN.ino.bin
