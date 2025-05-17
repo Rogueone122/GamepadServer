@@ -1,3 +1,4 @@
+GAMEPAD_MENU.ino.bin : /
 info.txt : /_info
 TestBIN.ino.bin : /
 jeuxSolo/TestBIN1.ino.bin : /jeuxSolo
