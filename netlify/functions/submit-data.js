@@ -2,9 +2,9 @@ exports.handler = async function(event, context) {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      version: "v0.2",
+      version: "v0.3",
       importance: "Facultative", // tu peux mettre "mineure", "critique", etc.
-      date_de_sortie: "15-04-25",
+      date_de_sortie: "17-05-25",
       commentaire: "Test"
     })
   };
