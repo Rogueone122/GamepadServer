@@ -1,1 +1,2 @@
-
+DEL : /delTest.txt
+DEL : /del
