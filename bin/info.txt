@@ -1,2 +1,3 @@
 serverUrl : https://gamepadserver.netlify.app/.netlify/functions/submit-data
 configURL : https://gamepadserver.netlify.app/bin/config/downloadConfig.txt
+gestionURL : https://gamepadserver.netlify.app/bin/config/gestion.txt
