@@ -2,3 +2,5 @@ menu/GAMEPAD_MENU.ino.bin : /
 info.txt : /_info
 OPTIONS.txt : /assets/MENU
 Options_Manette.txt : /assets/MENU
+Manette_1.txt : /assets/Manette
+Manette_2.txt : /assets/Manette
