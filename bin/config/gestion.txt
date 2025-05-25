@@ -1,2 +1,3 @@
 DEL : /TestBIN.ino.bin
 CREF : /apps
+CREF : /assets/Manette
