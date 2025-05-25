@@ -4,3 +4,5 @@ OPTIONS.txt : /assets/MENU
 Options_Manette.txt : /assets/MENU
 Manette_1.txt : /assets/Manette
 Manette_2.txt : /assets/Manette
+Manette_Btn.txt : /assets/Manette
+Manette_Joy.txt : /assets/Manette
