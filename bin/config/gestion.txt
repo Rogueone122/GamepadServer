@@ -1,2 +1,2 @@
 DEL : /TestBIN.ino.bin
-DEL : /jeuxSolo/TestBIN.ino.bin
+CREF : /apps
