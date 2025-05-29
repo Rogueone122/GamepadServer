@@ -4,7 +4,7 @@ exports.handler = async function(event, context) {
     body: JSON.stringify({
       version: "v0.1",
       importance: "Facultative", // tu peux mettre "mineure", "critique", etc.
-      date_de_sortie: "26-05-25",
+      date_de_sortie: "29-05-25",
       commentaire: "Test"
     })
   };
