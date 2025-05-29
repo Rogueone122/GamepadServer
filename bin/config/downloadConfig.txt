@@ -1,3 +1,4 @@
 menu/GAMEPAD_MENU.ino.bin : /
 info.txt : /_info
 Snake.ino.bin : /jeuxSolo
+Option_Manette.txt : /assets/MENU
