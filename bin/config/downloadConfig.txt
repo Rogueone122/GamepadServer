@@ -2,3 +2,4 @@ menu/GAMEPAD_MENU.ino.bin : /
 info.txt : /_info
 Manette_2.txt : /assets/Manette
 PART_Pcard2Croix.txt : /assets/MENU
+ManetteMode.ino.bin : /apps
