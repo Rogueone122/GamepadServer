@@ -5,7 +5,7 @@ import os
 app = FastAPI()
 
 # Dossier où tu ranges tes fichiers à télécharger
-FILES_DIR = "/files"
+FILES_DIR = "files"
 
 @app.get("/")
 def root():
