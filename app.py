@@ -18,3 +18,4 @@ def download_file(filename: str):
     if os.path.exists(file_path):
         return FileResponse(path=file_path, filename=filename, media_type="application/octet-stream")
     return {"error": "Fichier introuvable"}
+
